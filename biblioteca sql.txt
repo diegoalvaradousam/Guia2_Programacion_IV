@@ -1,0 +1,14 @@
+create database biblioteca;
+use biblioteca;
+
+create table Libro(
+IdLibro int not null primary key auto_increment,
+NombreLibro varchar(150) not null,
+FechaIngreso date not null,
+Categoria varchar(150) not null,
+Stock int
+
+);
+
+
+select * from Libro
